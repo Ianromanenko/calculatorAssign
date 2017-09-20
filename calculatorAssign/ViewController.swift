@@ -10,6 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    var typing = false;
+        
+    
+    @IBAction func numberPressed(_ sender: UIButton) {
+        let number = sender.currentTitle!
+        
+        if (typing == true){
+            resultLabel.text = resultLabel.text! + number;
+        } else {
+            resultLabel.text = number;
+            typing = true;
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
