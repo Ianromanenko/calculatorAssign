@@ -2,7 +2,7 @@
 // Author: Yan Romanenko
 // App: Calculator
 // Date: 22nd September 2017
-// Version: 0.3 min nath functionality added
+// Version: 0.4 UI improved
  */
 
 import UIKit
