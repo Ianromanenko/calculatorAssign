@@ -2,7 +2,7 @@
 // Author: Yan Romanenko
 // App: Calculator
 // Date: 22nd September 2017
-// Version: 0.2 math actions added
+// Version: 0.3 min nath functionality added
  */
 
 import UIKit
@@ -53,7 +53,33 @@ class ViewController: UIViewController {
         print(firstOperand);
         typing = false;
     }
+    
+    
 
+    
+    func operationWithTwoOperands(operation: (Double, Double) -> Double){
+        currentNumber = operation(firstOperand, secondOperand);
+        typing = false;
+    }
+
+    @IBAction func equalSign(_ sender: UIButton) {
+        if (typing == true) {
+            secondOperand = currentNumber;
+        }
+        switch operationSign {
+        case "/":
+            operationWithTwoOperands{$0 / $1};
+        case "x":
+            operationWithTwoOperands{$0 * $1};
+        case "+":
+            operationWithTwoOperands{$0 + $1};
+        case "-":
+            operationWithTwoOperands{$0 - $1};
+        default: break;
+        }
+        
+        
+    }
     
     
     override func viewDidLoad() {
