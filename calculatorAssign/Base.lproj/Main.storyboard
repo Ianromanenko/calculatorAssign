@@ -114,6 +114,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="equalSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8n-dh-JD7"/>
                                             <action selector="twoOperandsMath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frl-pv-7GD"/>
                                         </connections>
                                     </button>
@@ -202,6 +203,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="equalSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgt-qM-yh4"/>
                                             <action selector="twoOperandsMath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdS-5n-Dd4"/>
                                         </connections>
                                     </button>
@@ -290,6 +292,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="equalSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ysJ-NK-u07"/>
                                             <action selector="twoOperandsMath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFf-nE-CWh"/>
                                         </connections>
                                     </button>
@@ -378,6 +381,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="equalSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dk4-Ud-BGA"/>
                                             <action selector="twoOperandsMath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0y-Dh-7It"/>
                                         </connections>
                                     </button>

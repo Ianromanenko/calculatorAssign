@@ -1,8 +1,8 @@
 /*
 // Author: Yan Romanenko
 // App: Calculator
-// Date: 22nd September 2017
-// Version: 0.5 +/-, %, AC added with functionallity
+// Date: 25nd September 2017
+// Version: 0.6 line of calculations without pressing "="
  */
 
 import UIKit
@@ -27,7 +27,13 @@ class ViewController: UIViewController {
             return Double(resultLabel.text!)!;
         }
         set{
-            resultLabel.text = "\(newValue)";
+            let value = "\(newValue)";
+            let valueSeparArray = value.components(separatedBy: ".");
+            if valueSeparArray[1] == "0" {
+                resultLabel.text = "\(valueSeparArray[0])";
+            } else {
+                resultLabel.text = "\(newValue)";
+            }
             typing = false;
         }
     };
