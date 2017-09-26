@@ -2,7 +2,7 @@
 // Author: Yan Romanenko
 // App: Calculator
 // Date: 22nd September 2017
-// Version: 0.4 UI improved
+// Version: 0.5 +/-, %, AC added with functionallity
  */
 
 import UIKit
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     // !!!!!!!!!!
     var typing = false;
+    var dotLimit = false;
     var firstOperand: Double = 0;
     var secondOperand: Double = 0;
     var operationSign = "";
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
         firstOperand = currentNumber;
         print(firstOperand);
         typing = false;
+        dotLimit = false;
     }
     
     
@@ -66,19 +68,54 @@ class ViewController: UIViewController {
         if (typing == true) {
             secondOperand = currentNumber;
         }
+        dotLimit = false;
+        
         switch operationSign {
-        case "/":
-            operationWithTwoOperands{$0 / $1};
+        case "/":            operationWithTwoOperands{$0 / $1};
         case "x":
             operationWithTwoOperands{$0 * $1};
         case "+":
             operationWithTwoOperands{$0 + $1};
         case "-":
             operationWithTwoOperands{$0 - $1};
-        default: break;
+            default: break;
         }
         
         
+    }
+    
+    @IBAction func clearPressed(_ sender: UIButton) {
+        firstOperand = 0;
+        secondOperand = 0;
+        currentNumber = 0;
+        resultLabel.text = "0";
+        typing = false;
+        dotLimit = false;
+        operationSign = "";
+        
+    }
+    
+    @IBAction func plusMinusPressed(_ sender: UIButton) {
+        currentNumber = -currentNumber;
+    }
+    
+    @IBAction func percentagePressed(_ sender: UIButton) {
+        if (firstOperand == 0){
+            currentNumber = currentNumber/100;
+        } else{
+            secondOperand = firstOperand * currentNumber/100;
+        }
+        typing = false;
+    }
+    
+    
+    @IBAction func dotPressed(_ sender: UIButton) {
+        if (typing && !dotLimit){
+            resultLabel.text = resultLabel.text! + ".";
+            dotLimit = true;
+        } else  if(typing && dotLimit){
+            resultLabel.text = "0.";
+        }
     }
     
     

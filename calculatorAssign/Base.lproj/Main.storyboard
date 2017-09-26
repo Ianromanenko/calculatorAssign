@@ -47,12 +47,15 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRd-fX-2Zy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmD-rm-elw" customClass="roundButton" customModule="calculatorAssign" customModuleProvider="target">
                                         <rect key="frame" x="94.5" y="1" width="92.5" height="90"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32544948630136988" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                        <state key="normal">
+                                        <state key="normal" title="+/-">
                                             <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -66,12 +69,15 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="plusMinusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvz-tW-spD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9C-gC-cVt" customClass="roundButton" customModule="calculatorAssign" customModuleProvider="target">
                                         <rect key="frame" x="188" y="1" width="92.5" height="90"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32544948630136988" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                        <state key="normal">
+                                        <state key="normal" title="%">
                                             <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -85,6 +91,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="percentagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scF-I5-FAx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw0-E8-L84" customClass="roundButton" customModule="calculatorAssign" customModuleProvider="target">
                                         <rect key="frame" x="281.5" y="1" width="92.5" height="90"/>
@@ -412,6 +421,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLV-sa-bdt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lop-L1-1j7" customClass="roundButton" customModule="calculatorAssign" customModuleProvider="target">
                                         <rect key="frame" x="281.5" y="366" width="92.5" height="90"/>
